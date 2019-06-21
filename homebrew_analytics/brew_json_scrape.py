@@ -39,10 +39,10 @@ for package in packages_json:
     # so as to have a small footprint on Homebrew's servers
     results.append(data)
     time.sleep(r.elapsed.total_seconds())
-
+    
+    # Prints the time for each request to terminal
     print(f'Got {package_name} in {r.elapsed.total_seconds()} seconds.')
 
-# Prints the time for each request to terminal
 t2 = time.perf_counter()
 print(f'Finished in {t2-t1} seconds.')
 
