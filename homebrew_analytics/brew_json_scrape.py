@@ -6,10 +6,12 @@ import time
 r = requests.get('https://formulae.brew.sh/api/formula.json')
 packages_json = r.json()
 
+# Creating list to store JSON data on local machine
 results = []
 
 t1 = time.perf_counter()
 
+# Gets each package and its analytics
 for package in packages_json:
     package_name = package['name']
     package_desc = package['desc']
@@ -33,12 +35,14 @@ for package in packages_json:
         }
     }
 
+    # Sleeping the requests for the amount of time it takes for the current request
+    # so as to have a small footprint on Homebrew's servers
     results.append(data)
     time.sleep(r.elapsed.total_seconds())
 
     print(f'Got {package_name} in {r.elapsed.total_seconds()} seconds.')
 
-
+# Prints the time for each request to terminal
 t2 = time.perf_counter()
 print(f'Finished in {t2-t1} seconds.')
 
