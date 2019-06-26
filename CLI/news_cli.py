@@ -1,4 +1,4 @@
-#!/Users/jamesonwelch/env/bin/Python3
+#!/usr/bin/ Python3
 
 from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
