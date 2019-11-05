@@ -43,3 +43,26 @@ def f(x=[]):
 print(f'f() = {f()}')
 print(f'f() = {f()}')
 print(f'f() = {f()}')
+
+class A:
+    @staticmethod
+    def f(x=[]):
+        x.append(len(x))
+        return x
+
+print(f'A.f() = {A.f()}')
+print(f'A.f() = {A.f()}')
+print(f'A.f() = {A.f()}')
+
+class A:
+    def f(self, x=[]):
+        x.append(len(x))
+        return x
+
+print(f'A().f() = {A().f()}')
+print(f'A().f() = {A().f()}')
+print(f'A().f() = {A().f()}')
+
+print(f'locals = {locals().keys()}')
+print(f'globals = {globals().keys()}')
+print(f'locals is globals = {locals() is globals()}')
