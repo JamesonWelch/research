@@ -19,7 +19,7 @@ containers = page_soup.findAll('div',{'class':'item-container'})
 #divWithInfo = containers[0].find("div","item-info")
 
 for container in containers:
-    divWithInfo = containers[0].find("div","item-info")
+    divWithInfo = container.find("div","item-info")
     brand = divWithInfo.a.img["title"]
 
     title_container = divWithInfo.findAll("a", {"class":"item-title"})
