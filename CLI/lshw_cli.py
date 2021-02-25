@@ -35,9 +35,17 @@ args = parser.parse_args()
 
 
 def file_selection(file_loc):
+    lshw_out = []
     with open(file_loc, "r") as f:
-        files = f.read()
-    return files
+        for line in f:
+            lshw_out.append(line)
+            #print(line.strip())
+            #time.sleep(0.08)
+            #pass
+        #lshw_out = f.read()
+    while True:
+        for line in lshw_out:
+            print(line.strip())
+            time.sleep(0.08)
 
-
-print(file_selection("lshw.txt"))
+file_selection('lshw.txt')
