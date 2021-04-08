@@ -2,7 +2,6 @@
 
 # update
 sudo apt update || sudo yum update
-<<<<<<< HEAD
 
 # Install Selenium webdriver and chrome
 wget https://chromedriver.storage.googleapis.com/89.0.438.23/chromedriver_linux64.zip
@@ -13,8 +12,6 @@ chromedriver --version
 
 curl https://intoli.com/install-google-chrome.sh | bash || curl https://intoli.com/install-google-chrome.sh
 sudo mv /usr/bin/google-chrome-stable /usr/bin/google-chrome
-=======
->>>>>>> c26bffa417005f98f02140d806e8153e7798f740
 
 # install Python and dependencies
 sudo apt install python3 || sudo yum install python3
@@ -32,8 +29,4 @@ source venv/bin/activate
 python3 -m pip install -r requirements.txt || echo "requirements.txt pip install failed, check to see file exists"
 
 google-chrome --version && which google-chrome
-<<<<<<< HEAD
 python --version && which python
-=======
-python3 --version
->>>>>>> c26bffa417005f98f02140d806e8153e7798f740
