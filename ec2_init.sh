@@ -4,7 +4,7 @@
 sudo apt update || sudo yum update
 
 # Install Selenium webdriver and chrome
-wget https://chromedriver.storage.googleapis.com/89.0.438.23/chromedriver_linux64.zip
+wget https://chromedriver.storage.googleapis.com/89.0.4389.23/chromedriver_linux64.zip
 unzip chromedriver_linux64.zip || sudo apt install unzip && unzip chromedriver_linux64.zip || sudo yum install unzip && unzip chromedriver_linux64.zip
 sudo chmod +x chromedriver && sudo mv chromedriver /usr/bin/chromedriver
 
