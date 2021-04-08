@@ -1,3 +1,4 @@
+python3 -m pip install -r requirements.txt
 python3 -m pip install async-timeout
 python3 -m pip install aiohttp
 python3 -m pip install selenium
