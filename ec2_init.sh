@@ -38,10 +38,10 @@ mkdir prod/tkpy
 # python3 -m pip uninstall requests -y
 # python3 -m pip install requests==2.22.0
 # python3 -m pip install pybigquery
-# python3 -m pip install numpy (needs verification)
+# python3 -m pip install numpy
 # python3 -m pip install --upgrade snowflake-connector-python
 # python3 -m pip install snowflake-connector-python[pandas]
 # python3 -m pip install --upgrade parquet
 
 google-chrome --version && which google-chrome
-python --version && which python
+python3 --version && which python3
