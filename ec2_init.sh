@@ -5,7 +5,7 @@ sudo apt update
 
 # install Python and dependencies
 sudo apt install python3
-sudo pip3 install selenium || sudo apt install python3-pip
+pip3 --version || sudo apt install python3-pip
 sudo pip3 install virtualenv || sudo apt install virtualenv
 
 # Project-specific commands
