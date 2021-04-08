@@ -28,3 +28,4 @@ chromedriver --version
 curl https://intoli.com/install-google-chrome.sh | bash || curl https://intoli.com/install-google-chrome.sh
 sudo mv /usr/bin/google-chrome-stable /usr/bin/google-chrome
 google-chrome --version && which google-chrome
+python3 --version
