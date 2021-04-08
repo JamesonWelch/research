@@ -12,6 +12,7 @@ sudo pip3 install virtualenv || sudo apt install virtualenv
 mkdir dev
 mkdir prod
 cd prod
+mkdir tkdb
 
 virtualenv --python=python3 venv
 source venv/bin/activate
